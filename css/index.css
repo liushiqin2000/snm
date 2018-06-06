@@ -1,0 +1,280 @@
+.jd_container{
+  width: 100%;
+  height: 1000px;
+  max-width: 640px;
+  min-width: 320px;
+  margin:0 auto;
+}
+.jd_header{
+  width: 100%;
+  max-width: 640px;
+  height: 40px;
+  position:fixed;
+  z-index: 999;
+  /*background-color: rgba(222, 24, 27, 0);*/
+}
+.jd_header .logo{
+  width: 57px;
+  height: 21px;
+  position: absolute;
+  top:8px;
+  left:8px;
+  background-position: 0 -109px;
+}
+.jd_header .login{
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top:9px;
+  right:13px;
+
+}
+.jd_header .login a{
+  color: #fff;
+}
+.jd_header .search{
+  height: 40px;
+  margin:0 50px 0 75px;
+
+}
+.jd_header input{
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding-left: 30px;
+
+}
+.jd_header i{
+  width: 20px;
+  height: 20px;
+  background-position: -60px -109px;
+  position: absolute;
+  left:80px;
+  top:10px;
+}
+/*轮播图banner区域*/
+.jd_banner{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.jd_banner .banner{
+  width:1000%;
+  transform: translateX(-10%);
+
+}
+.jd_banner .banner li{
+  width: 10%;
+  float: left;
+
+}
+.jd_banner .banner img{
+  width: 100%;
+  height: 100%;
+}
+
+/*小圆点设置*/
+.jd_banner .circle{
+  position: absolute;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%) translateY(-8px);
+}
+.jd_banner .circle li{
+  width: 6px;
+  height: 6px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  float: left;
+  margin:0 5px;
+
+}
+.circle li.now{
+  background-color: #fff;
+}
+/*京东导航*/
+.jd_nav {
+  width: 100%;
+  height: 160px;
+
+}
+.jd_nav ul{
+
+}
+.jd_nav li{
+  width: 20%;
+  float: left;
+  text-align: center;
+  padding:10px 0;
+
+
+}
+.jd_nav a{
+  width: 100%;
+  color: #000;
+
+}
+.jd_nav img{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin:0 auto;
+}
+/*新闻部分*/
+.jd_news{
+  height: 30px;
+  margin:0 auto;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+
+}
+.jd_news .logo{
+  height: 100%;
+  overflow: hidden;
+  float: left;
+
+}
+.jd_news .logo img{
+  width: 75px;
+  height: 18px;
+
+  display: block;
+  margin:5px auto;
+  padding-left: 10px;
+}
+.jd_news .more{
+  float: right;
+  position: absolute;
+  right:6px;
+  top:6px;
+
+}
+.jd_news .new ul{
+  width: 85%;
+  background-color: #fff;
+  /*overflow: hidden;*/
+  position: absolute;
+  left:92px;
+  top:0;
+  /*transition: all 16s ;*/
+  /*transform: translateY(0);*/
+}
+/*.jd_news .new ul{*/
+  /*transform: translateY(-270px);*/
+/*}*/
+.jd_news .new li{
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  line-height: 30px;
+
+}
+/*//秒杀部分*/
+.jd_secKill{
+
+  margin:10px 0;
+  background-color: #fff;
+  border-radius: 9px;
+  line-height: 30px;
+  position: relative;
+}
+.secKill_logo{
+  padding-left:30px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f23030;
+  letter-spacing: 2px;
+  float: left;
+
+
+}
+.secKill_logo i{
+  width: 20px;
+  height: 25px;
+  position: absolute;
+  left:5px;
+  bottom:3px;
+  background-position: -81px -109px;
+}
+.secKill_Time{
+  float: left;
+  margin-left:15px;
+  text-align: center;
+  margin-top:6px;
+
+}
+.secKill_Time span{
+  float: left;
+
+}
+.secKill_Time span:nth-child(odd){
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border-radius: 4px;
+  background-color: #000;
+  color: #fff;
+
+}
+.secKill_Time span:nth-child(even){
+  line-height: 18px;
+  margin:0 5px;
+  
+}
+.secKill_more{
+  float: right;
+}
+.jd_product{
+  background-color: #fff;
+}
+.jd_product li{
+  width: 87px;
+  padding:0 10px;
+  float: left;
+  text-align: center;
+}
+/*.jd_product li a{*/
+  /*width: 100%;*/
+  /*height: 70px;*/
+  /*border-right:1px solid #ccc;*/
+
+.jd_product img{
+  width: 60px;
+  height: 60px;
+
+
+}
+.jd_product .product ul{
+  width: 2000px;
+}
+.jd_product .product{
+
+  overflow: scroll;
+
+}
+.jd_product p:first-of-type{
+  color: #f23030;
+  font-weight: 700;
+}
+.jd_product p:last-of-type{
+  text-decoration: line-through;
+}
+/*京东超级日*/
+.jd_superDate div{
+  width: 33.33%;
+  float: left;
+}
+/*商品*/
+.jd_major ul{
+  width: 100%;
+}
+.jd_major li a{
+  float: left;
+  width: 33.33%;
+}
+.jd_major li:nth-child(2) a,.jd_major li:nth-child(3) a{
+  width: 50%;
+}

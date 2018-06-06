@@ -1,0 +1,224 @@
+@charset "UTF-8";
+.jd_header {
+  height: 44px;
+  background-image: linear-gradient(#ffffff, #cccccc);
+}
+.jd_header .header-back {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-position: -20px 0;
+  padding: 12px;
+  background-clip: content-box;
+  background-origin: content-box;
+}
+.jd_header .header-menu {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-position: -60px 0;
+  padding: 12px;
+  background-origin: content-box;
+  background-clip: content-box;
+}
+.jd_header .header-title {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 9px;
+  margin: 0 44px;
+}
+.jd_container {
+  width: 100%;
+  height: 1000px;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  position: relative;
+}
+body {
+  background-color: #fff;
+}
+.jd_tips {
+  width: 100%;
+  height: 32px;
+  background-color: #fff;
+  text-align: center;
+}
+.jd_tips .buy {
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  display: inline-block;
+}
+.jd_tips .buy::after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  background-image: url(../images/safe_icon.png);
+  background-size: cover;
+  left: -23px;
+  top: 5px;
+}
+.jd_content .jd_title {
+  height: 34px;
+  padding-right: 5px;
+  padding-left: 34px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  position: relative;
+}
+.jd_content .jd_title .fl,
+.jd_content .jd_title .fr {
+  height: 100%;
+  text-align: center;
+  line-height: 32px;
+}
+.jd_content .jd_title .fr {
+  color: #f23030;
+}
+.jd_content .jd_title .fl {
+  position: relative;
+  padding-left: 20px;
+}
+.jd_content .jd_title .fl .logo.jd_sprit {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-position: 0 0;
+  background-size: 160px 160px;
+}
+.jd_content .jd_title .jd_sprit {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-position: -180px -90px;
+  left: 8px;
+  top: 8px;
+}
+.jd_content .jd_title .jd_sprit.active {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-position: -180px -70px;
+  left: 8px;
+  top: 8px;
+}
+.good_item {
+  height: 100px;
+  padding-left: 34px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.good_item .jd_sprit {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-position: -180px -90px;
+  left: 8px;
+  top: 8px;
+}
+.good_item .jd_sprit.active {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-position: -180px -70px;
+  left: 8px;
+  top: 8px;
+}
+.good_item img {
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+.good_item .info_bottom {
+  width: 120px;
+  height: 34px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 126px;
+  bottom: 6px;
+}
+.good_item .info_bottom span {
+  float: left;
+  width: 33.33%;
+  height: 34px;
+  text-align: center;
+  line-height: 32px;
+}
+.good_item .info_bottom span input {
+  width: 100%;
+  height: 32px;
+  text-indent: 1em;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.good_item .rubbish_box {
+  width: 18px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  cursor: pointer;
+}
+.good_item .rubbish_box .rubbish-up > img {
+  width: 18px;
+  height: 6px;
+  margin-top: -3px;
+}
+.good_item .rubbish_box .rubbish-down > img {
+  width: 18px;
+  height: 18px;
+  margin-top: -3px;
+}
+.mask-box {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  max-width: 640px;
+}
+.mask-box .content {
+  width: 300px;
+  height: 150px;
+  border-radius: 9px;
+  background-color: #fff;
+  margin: 200px auto;
+  padding: 10px;
+}
+.mask-box .content .mask-text {
+  line-height: 80px;
+  font-size: 24px;
+  text-align: center;
+  height: 80px;
+  border-bottom: 1px solid #ccc;
+}
+.mask-box .cancle,
+.mask-box .affirm {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.mask-box .cancle {
+  float: left;
+}
+.mask-box .affirm {
+  float: right;
+  background-color: #e92322;
+  color: #fff;
+}
